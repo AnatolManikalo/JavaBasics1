@@ -1,0 +1,44 @@
+package Task62;
+
+import java.util.Scanner;
+
+public class Task6_2 {
+
+	public static void main(String[] args) {
+		double a,b,c,d,p,v,t, rez, chisl, znam;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Введите a: ");
+		while (!sc.hasNextDouble()) {
+			sc.next();
+		}
+a=sc.nextDouble();
+
+System.out.println("Введите b: ");
+while (!sc.hasNextDouble()) {
+	sc.next();
+}
+b=sc.nextDouble();
+
+System.out.println("Введите c: ");
+while (!sc.hasNextDouble()) {
+	sc.next();
+}
+c=sc.nextDouble();
+
+System.out.println("Введите d: ");
+while (!sc.hasNextDouble()) {
+	sc.next();
+}
+d=sc.nextDouble();
+	
+	p = a/c;
+	v=b/d;
+	chisl=a*b-c;
+	znam=c*d;
+	t=chisl/znam;
+	rez=p*v-t;
+	System.out.println("Результат: " + rez);
+	
+
+}
+}
