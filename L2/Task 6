@@ -1,0 +1,35 @@
+package Task6;
+
+import java.util.Scanner;
+
+public class Task6 {
+
+	public static void main(String[] args) {
+		double a,b,c,kv=2,kub=3, chisl, znam, rez;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Введите a: ");
+		while (!sc.hasNextDouble()) {
+			sc.next();
+		}
+a=sc.nextDouble();
+
+System.out.println("Введите b: ");
+while (!sc.hasNextDouble()) {
+	sc.next();
+}
+b=sc.nextDouble();
+
+System.out.println("Введите c: ");
+while (!sc.hasNextDouble()) {
+	sc.next();
+}
+c=sc.nextDouble();
+	
+	znam = 2*a;
+	chisl=b+Math.sqrt((Math.pow(b, kv)+4*a*c));
+	rez=chisl/znam-Math.pow(a,kub)*c+b;
+	System.out.println("Результат: " + rez);
+	
+
+}
+}
