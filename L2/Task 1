@@ -1,0 +1,35 @@
+package Task1;
+import java.util.Scanner;
+public class Task1 {
+
+	public static void main(String[] args) {
+		int a,b,c,d,e,f=2;
+		Scanner sum = new Scanner(System.in);
+		System.out.println("Enter a");
+		while (!sum.hasNextInt()) {
+			sum.next();
+	}
+		a=sum.nextInt();
+		System.out.println("Enter b");
+		while (!sum.hasNextInt()) {
+			sum.next();
+	}
+		b=sum.nextInt();
+		if (a==b) {
+			System.out.println("Скоро Новый Год!");
+			
+		}
+		else if(a!=b) {
+			System.out.println("Enter c");
+			while (!sum.hasNextInt()) {
+				sum.next();
+		}
+			c=sum.nextInt();
+			d=a+b+c;
+			e= (int) (Math.pow(a, f)+Math.pow(b, f));
+			
+			System.out.println(d);
+			System.out.println(e);
+			System.out.println("Моя любимая футбольная команда");}
+	}
+}
