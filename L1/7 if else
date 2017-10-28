@@ -1,0 +1,39 @@
+package Sevenn;
+import java.util.Scanner;
+public class Sevenn {
+
+	public static void main(String[] args) {
+		int a,b,c=0,d=0,e=0;
+		Scanner sum = new Scanner(System.in);
+		System.out.println("Enter a");
+		while (!sum.hasNextInt()) {
+			sum.next();
+	}
+		a=sum.nextInt();
+		System.out.println("Enter b");
+		while (!sum.hasNextInt()) {
+			sum.next();
+	}
+		b=sum.nextInt();
+		if (a==b) {
+			System.out.println("Конец!");
+			
+		}
+		else if(a!=b) {
+			System.out.println("Enter c");
+			while (!sum.hasNextInt()) {
+				sum.next();
+		}
+			c=sum.nextInt();}
+		if(a>b) {
+			d=b+c;
+			System.out.println(d);
+			}
+		else if (a<b) {
+		e=a+b+c;
+		System.out.println(e+ " Новый год!");
+			
+		}
+
+	}
+}
