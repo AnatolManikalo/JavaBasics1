@@ -1,0 +1,20 @@
+package Task9;
+import java.util.Scanner;
+public class Task9 {
+	public static void main(String[] args) {
+
+	    Scanner sc = new Scanner(System.in);
+
+	      System.out.println("Введите радиус окружности");
+	      while (!sc.hasNextDouble()) {
+	        sc.next();
+	      }
+	      double r = sc.nextDouble();
+	      double s,p;
+	      s=Math.pow(r, 2)*Math.PI;
+	      p=2*Math.PI*r;
+	      System.out.println("Площадь круга равна " + s);
+	      System.out.println("Длина окружности равна " + p);
+	      
+	  }
+}
