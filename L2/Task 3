@@ -1,0 +1,31 @@
+package Task3;
+import java.util.Scanner;
+public class Task3 {
+
+	public static void main(String[] args) {
+		Scanner sc;
+		int n=0, a=0, b=0;
+		System.out.print("Введите количество чисел: ");
+		sc = new Scanner(System.in);
+		if (sc.hasNextInt()) {
+			n = sc.nextInt();
+		}
+		double[] arrayDouble = new double[n];
+		for (int i=0; i<n; i++) {
+			System.out.print("Введите вещественное число: ");
+			if (sc.hasNextDouble()) {
+				arrayDouble[i] = sc.nextDouble() - sc.nextDouble()%1;
+				System.out.println(arrayDouble[i]);
+				if (arrayDouble[i] % 2 == 0) {
+					a++;
+				}
+				if (arrayDouble[i] > 15) {
+					b++;
+				}
+			}
+		}
+		System.out.println("Четных " + a + "больше 15 " + b);
+		}
+
+}
+
